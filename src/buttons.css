@@ -1,0 +1,88 @@
+.BtnWrapp {
+    height: 150px;
+    width: 600px;
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Btn {
+    height: 110px;
+    width: 240px;
+    float: left;
+    margin-left: 38px;
+    background: radial-gradient(white, rgb(185, 185, 185));
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    position: relative;
+    box-shadow: rgb(168, 168, 168) 0 10px;
+    border-radius: 15px;
+    color:  black;
+    font-size: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+#StartBtn {
+    height: 50px;
+    width: 190px;
+    background: radial-gradient(rgb(37, 204, 255), rgb(0, 117, 172));
+    position: absolute;
+    border-radius: 15px;
+    color:  black;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.2s;
+    left: 203px;
+    top: 130px;
+    animation: epilipsia 0.5s infinite;
+}
+
+a:visited {
+    animation: none;
+}
+
+.Btn:active {
+    box-shadow: rgb(185, 181, 155) 0 0px;
+    margin-top: 10px;
+}
+
+.Btn:hover {
+    background: radial-gradient(gold, rgb(219, 219, 219));
+}
+
+.Btn:hover .left{
+    border-right: 70px solid rgb(180, 179, 85);
+}
+.Btn:hover .right{
+    border-left: 70px solid rgb(180, 179, 85);
+}
+
+.Arrow {
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid transparent;
+    border-top: 35px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.right {
+    border-left: 70px solid rgb(155, 155, 155);
+}
+
+.left {
+    border-right: 70px solid rgb(155, 155, 155);
+}
+
+@keyframes epilipsia {
+    from {border: 7px solid rgb(255, 230, 0);
+    color: rgb(255, 0, 255);
+    }
+    to {border: 7px solid rgb(255, 0, 255);
+    color:rgb(255, 230, 0);
+    }
+}

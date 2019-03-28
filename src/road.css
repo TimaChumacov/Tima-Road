@@ -1,0 +1,128 @@
+.Road {
+    height: 550px;
+    width: 600px;
+    margin-top: 30px;
+    background: url("asphalt.jpg");
+    border: 8px solid rgb(15, 104, 89);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .RoadLine {
+    height: 550px;
+    width: 200px;
+    box-sizing: border-box;
+    float: left;
+    border: 2px solid rgb(97, 97, 97);
+  }
+
+  #Car {
+    height: 240px;
+    width: 120px;
+    background:url("car.png") 50% 75%;
+    background-size: 121px;
+    position: absolute;
+    top: 300px;
+    left: 240px;
+    transition: 1s;
+    transform-origin: 50% 100%;
+    z-index: 1000;
+  }
+
+  #Block {
+    height: 140px;
+    width: 160px;
+    background:url("roadblcok.png") 50% 75%;
+    background-size: 180px;
+    position: absolute;
+    left: 420px;
+    top:0;
+    transform-origin: 50% 100%;
+    animation: blockMove 1.5s linear;
+  }
+
+  #Block2 {
+    height: 140px;
+    width: 160px;
+    background:url("roadblcok.png") 50% 75%;
+    background-size: 180px;
+    position: absolute;
+    left: 420px;
+    top:0;
+    transform-origin: 50% 100%;
+    animation: blockMove 1.5s linear;
+  }
+
+  .lostScreen {
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    font-size: 70px;
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
+
+  #Bomb {
+    width: 600px;
+    height: 550px;
+    background: url("BOOM.gif");
+    z-index: 1000000;
+    background-size: 600px;
+    position: absolute;
+  }
+
+  .restart {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgb(25, 226, 149);
+    border: 15px solid gold;
+    color: gold;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-size: 90px;
+    position: relative;
+    left: 245px;
+  }
+
+  .mWrapp {
+      position: absolute;
+      left: 500px;
+      width: 100px;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 10000;
+      box-sizing: border-box;
+  }
+
+  .maxM {
+      width: 100px;
+      height: 40px;
+      border: 1px solid gold;
+      background: url("throphy.png");
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+      font-size: 16px;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 10px;
+  }
+  
+  .currentM {
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+}
+  @keyframes blockMove {
+    from {top: 0}
+    to {top:420px}
+  }
+
